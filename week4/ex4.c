@@ -10,12 +10,12 @@ int main() {
     scanf("%s", program);
 
     int i = 0;
-    char *p = strtok (program, " ");
+    char *p = strtok(program, " ");
     char *array[3];
 
     while (p != NULL) {
         array[i++] = p;
-        p = strtok (NULL, " ");
+        p = strtok(NULL, " ");
     }
 
     pid_t pid;
@@ -27,8 +27,7 @@ int main() {
         // Child.
 //        execve(array[0], array, NULL);
     } else {
-        // Parent: do nothing.
-        execve(array[0], array, NULL);
+        execve("/bin/sh", array, NULL);
     }
     return 0;
 }
