@@ -1,0 +1,10 @@
+Physical address:
+-   Real memory address which corresponds to some physicaly accessable
+    place in your primary memory.
+-   Usually amount of physical memory is fixed and the information 
+    may be spreaded randomly among all the primary memory.
+Virtual address:
+-   Some mapping of physical addresses
+-   Is a special technique that allows us emulate a huge amount of memory
+    for any process, create an uniform address space for each process.
+-   Managed my MMU
