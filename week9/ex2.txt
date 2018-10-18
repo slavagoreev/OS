@@ -1,0 +1,4 @@
+The most efficient way to improve hit rate is to
+increase main memory size or minimize the range of 
+distribution of page references to increase the probability
+of frame to be in main memory.
