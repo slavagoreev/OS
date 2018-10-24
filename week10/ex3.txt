@@ -1,6 +1,11 @@
+Initial:
 -rwxrwxrwx 1 ec2-user ec2-user 0 Oct 24 10:01 _ex3.txt
+Remove execute permission for everybody:
 -rw-rw-rw- 1 ec2-user ec2-user 0 Oct 24 10:01 _ex3.txt
--rw-rw-rw- 1 ec2-user ec2-user 0 Oct 24 10:01 _ex3.txt
+Grant all permissions to owner and others (not group):
+-rwxrw-rwx 1 ec2-user ec2-user 0 Oct 24 10:01 _ex3.txt
+Make group permissions equal to user permissions:
+-rwxrwxrwx 1 ec2-user ec2-user 0 Oct 24 10:01 _ex3.txt
 
 660 = owner rw-, group rw-, user ---
 775 = owner rwx, group rwx, user r-x
