@@ -1,0 +1,9 @@
+printf() is line buffered, consequently, if it hasn't got \n at
+the end of the string, it will not print anything before \n is requested
+to be printed or program terminates.
+
+Fork makes a copy of process memory, thus, we will get "Hello" twice because
+both, child and parent will have not zero-terminated buffer.
+
+Program 2 has \n thus it will print immediately and then both child and parent
+will print \n.
