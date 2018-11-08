@@ -1,0 +1,9 @@
+1. DBUF_SIZE flag makes copying process faster. 
+   As we may see, copying with bigger buffer sizes 
+   makes whole procedure faster and small buffer size 
+   decreases the speed.
+2. O_SYNC makes it much slower. O_SYNC guarantees that the call 
+   will not return before all data has been transferred to the disk
+   so that causes delay.
+   If we decrease the buffer size than the whole process of copying
+   will take significantly more time in comparison with bigger buffer.
