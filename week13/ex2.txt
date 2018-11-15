@@ -1,0 +1,30 @@
+Deadlock Recovery
+Traditional operating system such as Windows doesn’t deal with deadlock recovery 
+as it is time and space consuming process. 
+
+    Recovery method
+        1. Killing the process.
+        2. Resource Preemption
+
+    It is better in cases:
+        - In real time operating systems, when security is very important
+        - When we need secure process management
+
+Deadlock Prevention may be 
+We can prevent Deadlock by eliminating any of the above four condition.
+    - Eliminate Mutual Exclusion 
+    - Eliminate Hold and wait
+    - Eliminate Circular Wait
+    - Eliminate No Preemption
+
+    It is better in cases:
+        - When we dont care about safety of data 
+        - It is strong and efficient for deadlock prevention
+
+Deadlock Avoidance
+    - Deadlock avoidance can be done with Banker’s Algorithm.
+
+    Banker’s Algorithm
+        - Resource allocation and deadlock avoidance algorithm 
+        - Test all the request made by processes for resources
+        - If them  no safe state it don’t allow the request made by the process.
